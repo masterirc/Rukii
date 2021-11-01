@@ -8,7 +8,7 @@
     "success_url": "",
     "stack": "container",
     "env": {
-        "RUKi_SESSION": {
+        "AMDI_SESSION": {
             "description": "Paste your QR session.",
             "required": true
         },
