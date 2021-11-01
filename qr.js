@@ -23,21 +23,21 @@ async function queenAmdi () {
         console.log(`${chalk.green.bold('Ruki')}${chalk.blue.bold(' Bot')}
 ${chalk.white.italic('RUKI Sting session')}
 
-${chalk.blue.italic('?¹ï?  Connecting to Whatsapp... Please Wait.')}`);
+${chalk.blue.italic('?Â¹Ã¯?  Connecting to Whatsapp... Please Wait.')}`);
     });
     
 
 	conn.on('open', async () => {
 		console.log(
 			chalk.green.bold('Queen Amdi QR Code: '),
-			'RUKi;;;' +
+			'AMDI;;;' +
 				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
 					'base64'
 				)
 		);
 		await conn.sendMessage(
 			conn.user.jid,
-			'RUKI;;;' +
+			'AMDI;;;' +
 				Buffer.from(JSON.stringify(conn.base64EncodedAuthInfo())).toString(
 					'base64'
 				),
@@ -46,15 +46,15 @@ ${chalk.blue.italic('?¹ï?  Connecting to Whatsapp... Please Wait.')}`);
 		if (conn.user.jid.startsWith('94')) {
 			await conn.sendMessage(
 				conn.user.jid,
-				'*? ï? Meka denna epa katawath ' + conn.user.name + '* ? ï?',
+				'*?Â Ã¯? Meka denna epa katawath ' + conn.user.name + '* ?Â Ã¯?',
 				MessageType.text
 			);
 		} else {
 			await conn.sendMessage(
 				conn.user.jid,
-				'*? ï? Please Do Not Share This Code With Anyone ' +
+				'*?Â Ã¯? Please Do Not Share This Code With Anyone ' +
 					conn.user.name +
-					'* ? ï?',
+					'* ?Â Ã¯?',
 				MessageType.text
 			);
 		}
